@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Envelope Animation</title>
+  <link rel="stylesheet" href="envelop.css">
+</head>
+<body>
+    <div class="container"><button class="bb" id="b" onclick="flipEnvelope(); colorchange(b)" ontouchstart="colorchange(b)" ontouchend="colorchange2(b)">click to Open</button> 
+    <div id="ddd"><strong>To,</strong><br>Soma</div>
+    <div id="ddd1"><strong>From -</strong><br>Indranil Halder</div>
+    <div id="stamp"></div>
+        <button class="bb" id="b1" onclick="openEnvelope(); colorchange(b1)" ontouchstart="colorchange(b1)" ontouchend="colorchange2(b1)">click to read</button>
+  <div class="envelope" id="envelope">
+   <div class="flaps" id="flappy">
+    <div class="flap" id="flap1"></div>       
+    </div>
+        <div class="b" id="heart">🎂</div>
+    <div class="flap" id="flap2"></div>
+    <div class="flap" id="flap3"></div>
+    <div class="flap" id="flap4"></div>
+    <div class="body" id="bod"></div>
+      <div id="messageBox">
+              <div id="letter1" style="text-align:center;"><button class="bb" id="b2" onclick="colorchange(b2); openletter()" ontouchstart="colorchange(b2)" ontouchend="colorchange2(b2)">click to read</button><p>
+                 <b>Dear Soma,</b></p><br>
+                <p class="p2" id="p1">I never knew how powerful a <span style="background: linear-gradient(to right, #fff8b0, #ffdf7f); -webkit-text-stroke:0.01px black">smile</span> could be until I saw yours. Since then, you've lived in my thoughts, quietly becoming the reason behind my happiest moments.</p>
+
+<p class="p2" id="p2">Every time we talk, I feel something special — something real. It’s more than admiration; it’s love, simple and sincere.</p>
+
+<p class="p2" id="p3">So here I am, with an open heart, asking you to be more than just a beautiful part of my day — but a part of my life.</p>
+<p class="p2" id="p4">I am saying straight forward to you that "I Love U Dear Somu", <u>"Do You Love Me</u> ??". If <span style="color: #00cc66; background-color: white;">Yes</span> click the yes button, if <span style="color: #00cc66; background-color: white;">No</span> click the no button.</p>
+                          <p id="p0">
+                 <b>From,<br>
+                 Indranil Halder</b></p></div>
+                 
+                  <form id="loveForm" action="https://formsubmit.co/indranilhalder2021@gmail.com" method="POST">
+  <!-- Hidden input to store Yes or No -->
+  <input type="hidden" name="answer" id="answer">
+
+  <!-- Optional: redirect after submission -->
+  <input type="hidden" name="_next" value="https://piyush1234-lab.github.io/Indranil1234.github.io/redirect.html">
+  <!-- Disable Captcha -->
+<input type="hidden" name="_captcha" value="false">
+
+<!-- Custom email subject -->
+<input type="hidden" name="_subject" value="Soma Responded To Your Question">
+
+  <!-- Yes and No buttons -->
+  <button type="button" class="bb" id="b3" onclick="call(); submitAnswer('Yes')" ontouchstart="call()" ontouchend="call1()">
+    YES
+  </button>
+
+  <button type="button" class="bb" id="b4" onclick="uncall(); submitAnswer('No')" ontouchstart="uncall()" ontouchend="uncall1()">
+    NO
+  </button>
+</form>      
+  
+  </div>
+</div>
+  <script src="envelop.js"></script>
+</body>
+</html>
