@@ -28,7 +28,7 @@ function login() {
     let trimmedName = in2.value.trim(); // Trim spaces
 
     if (allowedNames.includes(trimmedName) && pwd.value == "Soma@1234" || pwd.value =="Indranil@1234") {
-        window.location.href="envelop.html"
+        window.location.href="time.html"
     } else {
         alert("Wrong Username or Password!");
     }
