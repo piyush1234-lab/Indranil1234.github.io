@@ -1,5 +1,5 @@
 const birthdayMonth = 5; // August (0-based, so Jan = 0)
-const birthdayDate = 26;
+const birthdayDate = 27;
 const openHour = 0;
 const closeHour = 23;
 
@@ -21,7 +21,7 @@ function updatePage() {
 
   if (isTodayBirthday) {
     if (now >= start && now < end) {
-      window.location.href= "birthday.html"
+      window.location.href= "envelop.html"
     } else if (now < start) {
       show(waitScreen);
       showCountdown(start - now);
